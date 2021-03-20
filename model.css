@@ -1,26 +1,28 @@
-:root{
+:root {
     --primary: #efefef;
     --secondary: #ff7848;
-    --letterbox: 
-    #eba890;
+    --letterbox: #eba890;
 }
-html, body{
+html,
+body {
     height: 100vh;
-    margin 0;
+    margin: 0;
     background-color: var(--primary);
 }
-
-.left-side, .right-side, .extreme-right {
+.page-content {
+    display: flex;
+    height: 100vh;
+}
+.left-side,
+.right-side,
+.extreme-right {
     display: block;
     height: 100vh;
 }
-
-.left-side{
+.left-side {
     display: inline-block;
-
     width: 30%;
 }
-
 .content {
     display: block;
     background-color: var(--secondary);
@@ -30,23 +32,19 @@ html, body{
     margin: auto;
     max-width: 200px;
 }
-
-*{
+* {
     box-sizing: border-box;
 }
-
-.left-side .content .info-box{
+.left-side .content .info-box {
     display: flex;
     text-align: center;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
-
 .info-box h5 {
     display: block;
     margin-bottom: 28px;
-    margin-top: -19px;
     font-family: monospace;
     color: var(--letterbox);
 }
@@ -58,7 +56,6 @@ html, body{
     margin-top: 10px;
     border-radius: 50%;
 }
-
 .info h5 {
     color: var(--secondary);
     display: flex;
@@ -67,7 +64,6 @@ html, body{
     margin-top: 29px;
     justify-content: center;
 }
-
 .info h6 {
     display: flex;
     margin: auto;
@@ -79,7 +75,6 @@ html, body{
     font-size: smaller;
     align-items: baseline;
 }
-
 .info p {
     display: block;
     margin: auto;
@@ -88,43 +83,35 @@ html, body{
     font-size: small;
     margin-left: 33%;
 }
-
 /*****************************/
-  /******* Right Side **********/
-  /*****************************/
-
-  .flex-container {
+/******* Right Side **********/
+/*****************************/
+.flex-container {
     display: flex;
-    justify-content: space-around;
+    margin: 100px auto 0;
 }
-  .right-side {
+.flex-container section {
+    max-width: 280px;
+}
+.right-side {
     display: inline-block;
     width: 30%;
     max-width: 237px;
     height: auto;
-    position: absolute;
-    top: 113px;
 }
-
-.content .right-side .info-box{
+.content .right-side .info-box {
     display: inline-block;
     margin-top: auto;
 }
-
-.info-box1{
-display: inline-block;
-background-color: white;
-border-radius: 5px;
-margin: 8px;
-text-align: center;
+.info-box1 {
+    display: inline-block;
+    background-color: white;
+    border-radius: 5px;
+    margin: 8px;
+    text-align: center;
 }
-
-.content-right{
-    margin-top: -29px;
-}
-
-.info-box1 h5{
-color: var(--secondary);
+.info-box1 h5 {
+    color: var(--secondary);
     display: flex;
     align-items: flex-start;
     margin: auto;
@@ -132,58 +119,83 @@ color: var(--secondary);
     justify-content: flex-start;
     padding-left: 10px;
 }
-
-.info-box1 h6{
+.info-box1 h6 {
     display: flex;
     align-items: flex-start;
     margin: auto;
     margin-top: 10px;
     justify-content: flex-start;
     padding-left: 10px;
-    font-size: 0.8em; 
+    font-size: 0.8em;
 }
-
-.info-box1 p{
-display: flex;
-margin: auto;
-align-items: flex-start;
-font-style: normal;
-font-size: small;
-justify-content: flex-start;
-text-align: justify;
-padding: 10px;
-color: #9c9e9f;
+.info-box1 p {
+    display: flex;
+    margin: auto;
+    align-items: flex-start;
+    font-style: normal;
+    font-size: small;
+    justify-content: flex-start;
+    text-align: justify;
+    padding: 10px;
+    color: #9c9e9f;
 }
-
 .extreme-right {
     /* display: flex; */
     display: inline-block;
     margin-right: 21px;
-    position: absolute;
     flex-direction: column;
     width: 30%;
     max-width: 237px;
     height: auto;
-    top: 83px;
-    right: 5%;
 }
-
-.content-extreme-right .info-box2{
+.content-extreme-right .info-box2 {
     display: inline-block;
     margin-top: auto;
 }
-
-.infoooter {
+.manipulation {
     display: flex;
-    justify-content: flex-start;
+    align-items: end;
+    width: 100%;
+    height: 250px;
 }
 
-footer h5{
+.infooter{
+    display: inline-block;
+    margin: 28px auto;
+}
+footer h5 {
     text-align: left;
     color: var(--secondary);
 }
-
-footer .middle{
+footer .middle {
     display: inline-block;
-    justify-content: center;
+    margin: auto;
+    width: 69%;
+}
+
+.maisinfo{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+.middle > li{
+    
+        display: block;
+        margin: auto;
+        margin-top: 23px;
+        font-style: normal;
+        font-size: small;
+        margin-left: 33%;
+        list-style: square;
+}
+
+.maisinfo1{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+.middle div{
+    margin: 30px auto;
 }
