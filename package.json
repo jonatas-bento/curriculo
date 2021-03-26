@@ -1,0 +1,23 @@
+{
+  "name": "curriculo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "npx ./node_modules/nodemon/bin/nodemon.js server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonatas-bento/curriculo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonatas-bento/curriculo/issues"
+  },
+  "homepage": "https://github.com/jonatas-bento/curriculo#readme",
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
+}

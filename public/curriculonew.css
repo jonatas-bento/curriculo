@@ -66,6 +66,12 @@ main{
     height: 100vh;
 }
 
+@media (max-width: 426px){
+    main {
+    flex-direction: column;
+    margin-top: 0px;
+    line-height: 0.9;
+}}
 .left-side{
     align-self: flex-start;
     margin-top: 40px;
@@ -83,3 +89,4 @@ main{
     align-self: flex-start;
     margin-top: 40px;
 }
+
